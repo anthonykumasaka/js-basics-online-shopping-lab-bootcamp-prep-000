@@ -26,10 +26,10 @@ function viewCart() {
     current = current + `${cart[0].itemName} at $${cart[0].itemPrice}`
   } 
   if (cart.length >= 2) {
-    for (var i = 0; i < cart.length - 1; i++) {
+    for (var i = 1; i < cart.length - 1; i++) {
     current = current + `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
     } 
-    current = current + `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`;
+    current = current + ` and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`;
   }
    return current + "."; 
 }
