@@ -31,17 +31,7 @@ function viewCart() {
     } 
     current = current + `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`;
   }
-  
-   for (var i = 0; i < cart.length; i++){
-     if (i === cart.length - 1 && cart.length === 1) {
-       current = current + `${cart[i].itemName} at $${cart[i].itemPrice}.`;
-     } else if (i === cart.length - 1 && cart.length > 1) {
-       current = current + `and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
-     } else {
-       current = current + `${cart[i].itemName} at $${cart[i].itemPrice}, `; 
-     }
-     }
-   } return current; 
+   return current; 
 }
 
 
