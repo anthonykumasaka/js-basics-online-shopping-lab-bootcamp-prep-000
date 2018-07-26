@@ -29,9 +29,9 @@ function viewCart() {
     for (var i = 0; i < cart.length - 1; i++) {
     current = current + `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
     } 
-    current = current + `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`;
+    current = current + `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`;
   }
-   return current; 
+   return current + "."; 
 }
 
 
