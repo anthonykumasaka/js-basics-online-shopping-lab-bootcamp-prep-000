@@ -54,6 +54,6 @@ function placeOrder(cardNumber) {
  if (cardNumber === undefined) {
    return "Sorry, we don't have a credit card on file for you."
  } else {
-   return total(); 
+   return "Your total cost is " + total() + `, which be charged to the card ${cardNumber}.`; 
  }
 }
