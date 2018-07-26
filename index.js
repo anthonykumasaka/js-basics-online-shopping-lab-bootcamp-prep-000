@@ -29,7 +29,7 @@ function viewCart() {
        current = current + `and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
        
      } else if (i === 0) {
-       current = current + `${cart[i].itemName} at $${cart[i].itemPrice}, and `; 
+       current = current + `${cart[i].itemName} at $${cart[i].itemPrice}, `; 
      } else {
        current = current + `${cart[i].itemName} at $${cart[i].itemPrice}, `; 
      }
